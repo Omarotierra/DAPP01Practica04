@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.uv.DAPP01Practica04.DAPP01Practica04;
 
 import javax.persistence.Column;
@@ -13,11 +9,11 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "empleados")
+@Table(name = "empleado")
 public class Empleado {
     @Id
-    @GeneratedValue(generator = "empleados_clave_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "empleados_clave_seq", sequenceName = "empleados_clave_seq",
+    @GeneratedValue(generator = "empleado_clave_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "empleado_clave_seq", sequenceName = "empleado_clave_seq",
             initialValue = 1, allocationSize= 1)
     @Column(name= "clave")
     private long clave;
